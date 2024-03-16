@@ -9,8 +9,10 @@ seaborn = "==0.13.1"
 matplotlib = "*"
 pylint = "*"
 black = "*"
+pandas = "*"
 
 [dev-packages]
+pylint = "*"
 
 [requires]
 python_version = "3.11"
