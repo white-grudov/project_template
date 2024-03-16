@@ -22,6 +22,9 @@ def read_file(file_path: str) -> str:
 
     Returns:
         str: The content of the file
+
+    Raises:
+        FileNotFoundError: If the file does not exist
     """
     with open(file_path, "r") as file:
         return file.read()
@@ -36,5 +39,9 @@ def read_file_pandas(file_path: str) -> pd.DataFrame:
 
     Returns:
         pd.DataFrame: The content of the file
+
+    Raises:
+        FileNotFoundError: If the file does not exist
+        pd.errors.EmptyDataError: If the file is empty
     """
     return pd.read_csv(file_path)
